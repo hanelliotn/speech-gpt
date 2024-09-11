@@ -7,7 +7,7 @@ import speech_recognition as sr
 import openai
 
 
-class TalkGPT:
+class SpeechGPT:
     def __init__(self, voice_engine, speech_recognizer):
         self.voice_engine = voice_engine
         self.speech_recognizer = speech_recognizer
@@ -36,7 +36,7 @@ class TalkGPT:
 
 
     def activate(self):
-        self.speak('Hello, I am TalkGPT. How can I help you?')
+        self.speak('Hello, I am SpeechGPT. How can I help you?')
         return True
 
 

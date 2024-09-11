@@ -1,5 +1,5 @@
 # Import libraries
-from talk_gpt import TalkGPT
+from speech_gpt import SpeechGPT
 import pyttsx3
 
 
@@ -10,23 +10,23 @@ def main():
     engine.setProperty('voice', voices[14].id)
     engine.setProperty('rate', 180)
 
-    # Set up TalkGPT
-    talk_gpt = TalkGPT(voice_engine=engine, speech_recognizer=None)
+    # Set up SpeechGPT
+    speech_gpt = SpeechGPT(voice_engine=engine, speech_recognizer=None)
     is_activated = False
 
-    # TalkGPT listens and responds
+    # SpeechGPT listens and responds
     while True:
-        what_human_said = talk_gpt.listen()
+        what_human_said = speech_gpt.listen()
         if what_human_said == "":
             continue
         elif what_human_said.lower() in ["hello", "hi", "hey", "hello there", "hi there"]:
-            is_activated = talk_gpt.activate()
+            is_activated = speech_gpt.activate()
             continue
         elif "stop" in what_human_said.lower():
-            is_activated = talk_gpt.deactivate()
+            is_activated = speech_gpt.deactivate()
             break
         if is_activated:
-            talk_gpt.simple_chat(what_human_said)
+            speech_gpt.simple_chat(what_human_said)
 
 
 if __name__ == "__main__":

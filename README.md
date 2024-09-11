@@ -55,7 +55,7 @@ environment variable as below:
 export OPENAI_API_KEY=<YOUR-OPENAI-API-KEY>
 ```
 
-Now, you are ready to use TalkGPT!
+Now, you are ready to use SpeechGPT!
 
 ## Instructions of Use
 
@@ -63,15 +63,15 @@ Run
 ```bash
 python3 src/main.py
 ```
-to kickstart TalkGPT to listen.
+to kickstart SpeechGPT to listen.
 
-Then, say "Hello!", "Hi!", "Hi there!", "Hello there!" when TalkGPT is listening.
+Then, say "Hello!", "Hi!", "Hi there!", "Hello there!" when SpeechGPT is listening.
 
-After TalkGPT recognizes your words, it will be activated and greet.
+After SpeechGPT recognizes your words, it will be activated and greet.
 
-Starting from now, you can simple talk to TalkGPT as much as you want.
+Starting from now, you can simple talk to SpeechGPT as much as you want.
 
-To deactivate TalkGPT, please say "Stop!".
+To deactivate SpeechGPT, please say "Stop!".
 
 ## Dedications
 I dedicate this hard work commitment to my mom, whom has sacrificed everything 
